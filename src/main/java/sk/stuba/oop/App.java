@@ -11,8 +11,15 @@ public class App {
             System.out.println("Napis cislo do pola");
             pole[i]=sc.nextInt();
         }
-        for(int i = 0; i<pole.length; i++  ){
-            System.out.print(pole[i]+" ");
+        vypis(pole);
+        System.out.println();
+        int[] pole2 = {5,5,5,5};
+        vypis(pole2);
+    }
+
+    private static void vypis(int[] x) {
+        for(int i = 0; i<x.length; i++  ){
+            System.out.print(x[i]+" ");
         }
     }
 }
